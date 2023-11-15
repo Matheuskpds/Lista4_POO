@@ -1,0 +1,54 @@
+soma.doisValores(b, s):
+
+Ambos os argumentos são do tipo int.
+Chamará o método doisValores(int a, int b).
+Saída esperada: "M1"
+soma.doisValores(i, s):
+
+Ambos os argumentos são do tipo int.
+Chamará o método doisValores(int a, int b).
+Saída esperada: "M1"
+soma.doisValores(i, i):
+
+Ambos os argumentos são do tipo int.
+Chamará o método doisValores(int a, int b).
+Saída esperada: "M1"
+soma.doisValores(l, b):
+
+O primeiro argumento é do tipo long, o segundo é do tipo byte.
+Chamará o método doisValores(double a, int b).
+Saída esperada: "M2"
+soma.doisValores(f, s):
+
+O primeiro argumento é do tipo float, o segundo é do tipo short.
+Chamará o método doisValores(double a, int b).
+Saída esperada: "M2"
+soma.doisValores(d, b):
+
+O primeiro argumento é do tipo double, o segundo é do tipo byte.
+Chamará o método doisValores(double a, int b).
+Saída esperada: "M2"
+soma.doisValores(b, d):
+
+O primeiro argumento é do tipo byte, o segundo é do tipo double.
+Chamará o método doisValores(double a, int b) (mesmo que o segundo argumento seja double, ele será convertido implicitamente para int).
+Saída esperada: "M2"
+soma.doisValores(i, l):
+
+O primeiro argumento é do tipo int, o segundo é do tipo long.
+Chamará o método doisValores(double a, double b).
+Saída esperada: "M3"
+soma.doisValores(l, l):
+
+Ambos os argumentos são do tipo long.
+Chamará o método doisValores(double a, double b).
+Saída esperada: "M3"
+soma.doisValores(d, f):
+
+O primeiro argumento é do tipo double, o segundo é do tipo float.
+Chamará o método doisValores(double a, int b) (mesmo que o segundo argumento seja float, ele será convertido implicitamente para int).
+Saída esperada: "M2"
+soma.doisValores(i, d):
+O primeiro argumento é do tipo int, o segundo é do tipo double.
+Chamará o método doisValores(double a, int b) (mesmo que o segundo argumento seja double, ele será convertido implicitamente para int).
+Saída esperada: "M2"

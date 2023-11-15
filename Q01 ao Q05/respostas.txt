@@ -1,0 +1,55 @@
+1) Defina o que é polimorfismo e qual sua importância no mundo Orientado a Objetos (POO)?
+
+Em POO, o polimorfismo é quando uma classe possui os mesmos atributos e métodos herdados que uma superclasse, porém pode ser implementados com lógicas diferentes. Ou seja, o poliformismo permite que objetos de diferentes classes sejam tratados como objetos de uma classe base (superclasse), porém, podendo assumir diferentes formas e comportamentos, o que proporciona maior flexibilidade e extensibilidade ao código.
+
+
+2) Quais são os tipos de polimorfismos que existem em Orientação a Objetos?
+
+Existem 2 tipos principais de polimorfismo, o poliformismo de sobreposição e sobrecarga. Sobreposição é quando uma subclasse fornece uma implementação especifica um método que já foi implementado na superclasse, sendo necessário sobreescrever o método (Override em Java). Já a sobrecarga é quando uma classe possui vários métodos com o mesmo nome mas que possui assinaturas diferentes, ou seja, recebe diferentes parâmetros para executar as operações dentro da classe.
+
+
+3) Considere a classe:
+public carro() {
+ private int velocidade = 1;
+ public void acelera() {
+ velocidade += 1;
+ }
+ public void acelera(int aceleracao) {
+ velocidade += aceleracao;
+ }
+}
+
+a) Qual tipo de polimorfismo é apresentado?
+O tipo de polimorfismo da classe é o de sobrecarga
+
+b) Quais são os sinais que indicam a presença de Polimorfismo?
+A classe possui 2 métodos com o mesmo nome, mas que recebe parâmetros diferentes com comportamentos diferentes.
+
+
+
+4) Considere as seguintes assinaturas de métodos. Estes métodos podem ser considerados polimórficos? Por quê?
+public class Media {
+ public int Media(int a, int b) {
+ return (a + b) / 2;
+ }
+ public double Media(int a, int b) {
+ return (a + b) / 2.0;
+ }
+}
+
+Não, os métodos fornecidos não podem ser considerados polimórficos, e o código não seria compilado como está. Isso ocorre porque o polimorfismo de sobrecarga, que permite ter métodos com o mesmo nome mas com diferentes parâmetros, é baseado na assinatura dos métodos, que inclui o tipo e a quantidade de parâmetros.
+
+
+5) Identifique e explique o(s) erro(s) no polimorfismo de uma classe com as duas
+funções abaixo.
+ public String calculaSalario(int diasTrabalhados, String Cargo){
+ ...
+ }
+
+public double calculaSalario(int valorHora, String NomeFuncionario){
+ ...
+ }
+
+Os métodos fornecidos na classe apresentam um problema de assinatura que impede a sobrecarga correta. No polimorfismo por sobrecarga, é necessário que os métodos tenham assinaturas diferentes, o que inclui o tipo e/ou a ordem dos parâmetros. No caso fornecido, ambos os métodos têm os mesmos tipos de parâmetros (int e String). Além disso, o tipo de retorno dos métodos não são avaliados nas assinaturas.
+
+
